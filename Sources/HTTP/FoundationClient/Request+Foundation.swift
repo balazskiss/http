@@ -1,5 +1,8 @@
 import URI
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 extension Request {
     func makeFoundationRequest() throws -> URLRequest {

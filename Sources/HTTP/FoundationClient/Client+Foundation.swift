@@ -2,6 +2,9 @@ import Transport
 import Foundation
 import URI
 import Core
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// client based on Foundation.URLRequest
 /// and Foundation.URLSession
