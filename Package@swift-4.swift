@@ -35,7 +35,7 @@ let package = Package(
         .testTarget(name: "CookiesTests", dependencies: ["Cookies"]),
         .target(name: "HTTP", dependencies: ["URI", "CHTTP", "Sockets", "TLS", "Random"]),
         .testTarget(name: "HTTPTests", dependencies: ["HTTP"]),
-        .target(name: "WebSockets", dependencies: ["HTTP", "URI", "Crypto"]),
+        .target(name: "WebSockets", dependencies: ["HTTP", "URI", "OpenCrypto"]),
         .testTarget(name: "WebSocketsTests", dependencies: ["WebSockets"]),
         .target(name: "SMTP", dependencies: ["Sockets", "Transport"]),
         .testTarget(name: "SMTPTests", dependencies: ["SMTP"]),
